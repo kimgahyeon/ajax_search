@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <!-- 구글 웹폰트 -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"> 
+
+        <!-- css, js, jquery -->
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <input type="radio" value="elementary" name="schoolType">
+        <label for="elementaryRadio"> 초등학교 </label>
+        <input type="radio" value="middle" name="schoolType">
+        <label for="middleRadio"> 중학교 </label>
+        <input type="radio" value="high" name="schoolType">
+        <label for="highRadio"> 고등학교 </label>
+
+        <input id="schoolInput" type="text" data-cate="high" onkeyup="search(this);" placeholder="학교를 입력하세요">
+        <div id="schoolList"></div>
+        <h1 id="selected"></h1>
+    </body>
+
+</html>
